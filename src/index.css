@@ -1,13 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #9bc8f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container{
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  background-color: white;
+  box-shadow: 50px 50px 40px rgba(0, 0, 0, 0.3);
+}
+
+.title{
+  margin: 15px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading{
+  margin-bottom: 7px;
+}
+
+.underline{
+  width: 60px;
+  height: 3px;
+  background-color: #248cee;
+}
+
+.image-quote{
+  position: relative;
+}
+
+.image-container{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.quote-item{
+  background-color: #248cee;
+  color: white;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top:25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+img{
+max-width: 100%;
+z-index: -1;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.author{
+  margin-bottom: 8px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.job{
+  margin-bottom: 20px;
+  color: #076ecf;
+  font-weight:bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.info-div{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.info{
+  margin: 0 auto;
+  max-width: 70%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.left-right-icons{
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.icons{
+  color: #248cee;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.surprise-btn{
+  background-color: #dfebf7;
+  border: none;
+  color: #248cee;
+  padding: 3px 10px;
+  margin-bottom: 15px;
 }
